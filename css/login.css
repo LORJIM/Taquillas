@@ -1,0 +1,330 @@
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 400px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+color:black;
+background-color: transparent;
+}
+
+.card-footer{
+    line-height: 2.2em;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+#loading {
+    background: url('../images/carga.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    display: none;
+    left: 0;
+    background-color: white;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: black;
+}
+
+.social_icon,.social_iconFooter{
+    position: absolute;
+    right: 20px;
+}
+.social_icon{
+    top: 2px;
+}
+.social_iconFooter{
+    top: -19px;
+}
+#password{
+    display: initial;
+    margin-right: 18px;
+}
+.inputLoginComponent {
+    cursor: pointer;
+    vertical-align: top;
+            outline: none;
+            box-shadow: none;
+            text-align: center;
+            width: 32px;
+            height: 30px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            background-color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+}
+.bloqueada{
+    background-color: lightsalmon;
+}
+.botonTeclado, .botonBorrar, .botonBorrarTodo, .botonCerrarInterior {
+    cursor: pointer;
+    vertical-align: top;
+            outline: none;
+            box-shadow: none;
+            text-align: center;
+            width: 32px;
+            height: 30px;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-bottom: 8px;
+            border: 1px solid grey;
+            color: grey;
+            background-color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+}
+            .tecladoVirtual {
+                position: absolute;
+                z-index: 4;
+                display:none;
+                left: 785px;
+                margin-top: -28px;
+                background: #ffffff;
+                font-family: Arial;
+                font-size: 14px;
+                box-shadow: 1px 2px 25px 2px #ffc312;
+                text-align: left;
+                width: 145px;
+                top: 130px;
+                height: auto;
+                border-radius: 10px;
+                padding: 0px;
+                transition: 300ms;
+                animation-name: aparecer; 
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+            }
+            @keyframes aparecer {
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 0.5;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            .inputValidar{
+                position: relative;    
+                display: unset;
+            }
+            .botonCerrar{
+                position: absolute;
+                padding-left: 128px;
+                top: -22px;
+            }
+            #botonCerrar {
+                background-color: red;
+                width:23px;
+                height:23px;
+            }
+            .error{
+                display: none;
+                margin-left: 10px;
+            }		
+            
+            .error_show{
+                display: block;
+                color: red;
+                margin-left: 10px;
+            }
+            input.invalid, textarea.invalid{
+                border: 2px solid red;
+            }
+            
+            input.valid, textarea.valid{
+                border: 2px solid green;
+            }
+            
+
+.botonPantalla{
+    cursor: pointer;
+    vertical-align: top;
+            outline: none;
+            box-shadow: none;
+            width: 32px;
+            height: 30px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #327e81;
+            background-color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            color: #6fbaad;
+}
+.administrador{
+    margin-left: 650px;
+    margin-top: 15px;
+}
+.rowHeader{
+    display: flex;
+    height: 75px;
+}
+.rowCenter{
+    display: flex;
+    height:251px;
+}
+.rowTaquillas{
+    display: flex;
+    height:651px;
+}
+.rowTaquillas{
+    text-align: center;
+}
+#selectPlantas{
+    margin-left: 5%;
+    height: 20px;
+    margin-top: 125px;
+}
+#divPlantas{
+    line-height: 251px;
+    width: 100%;
+    text-align: center;
+}
+#buscador{
+    border-radius: 2rem;
+    background-color: black;
+    margin: 0px 470px;
+    height: 36px;
+}
+#btnBuscar{
+    background-color: transparent; 
+    border:none; 
+    margin-left:20px;
+}
+#btnCancReserva, #btnIncidencia, #mensajeReserva{
+    margin-top: 20px;
+}
+.consejo{
+    font-size: 10px;
+}
+.tablaTaquillas{
+    height: 350px;
+    width: 363px;
+    display: inline-table;
+}
+.tablaTaquillas td{    
+    padding: 20px;
+}
+.tablaTaquillas button{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 81px;
+    height: 81px;
+    border: none;
+    background-color: white;
+}
+
+#leyenda p{
+    border: 0.5px solid grey;
+}
+.leyendaDisponible{
+    background-color: lightgreen;
+}
+.leyendaOcupada{
+    background-color: red;
+}
+.leyendaReservada{
+    background-color: grey;
+}
+.leyendaMantenimiento{
+    background-color: yellow;
+}
+.elemento{
+    width:49%;
+}
+#reserva{
+    width:10%;
+    margin-left: 25px;
+}
+#taquillas{
+    width:70%;
+}
+#leyenda{
+    width:20%;
+    margin-right: 25px;
+}
+.header_bottom_section h2{
+    padding: 20px 610px;
+    width: max-content;
+}
+.logout{
+    background-color:transparent;
+    float: right;
+    margin-top: 15px;
+}
+.bloqueada{
+    cursor: not-allowed;
+}
+.input-group-prepend{
+    padding-right: 10px;
+    width: 24px;
+}
+#ojo{
+    background: transparent;
+    border:none;
+}
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
